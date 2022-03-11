@@ -1,24 +1,104 @@
+/*Importation de la police Raleway à partir de google font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
 
+/*Définition de la proprietée box-sizing*/
 * {
     box-sizing: border-box;
 }
 
-* {
-font-family: 'Raleway', sans-serif;
+/*On met en place dans les balises body la police importé Raleway*/
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
+/*On définit le block avec flex-box de la balise header*/
 header {
     display: block;
 }
 
-ul {
+/*Définition de la taille du logo pour l'adapter à la page*/
+#logo {
+width: 160px;
+}
+
+/*Mise en page du menu de navigation qui fait partie de la balise nav*/
+nav {
     display: flex;
-    margin-right: 5%;
-    float: right;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
 }
 
-li {
-    padding: 10%;
+nav li {
+    padding-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 25px 10px 0 10px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top:3px solid #0065FC;
+}
+
+/*Titre et description + la barre de recherche avec le bouton rechercher*/
+#recherche> h1 {
+    margin-bottom: 0;
+}
+
+#recherche> p {
+    margin-top: 0;
+}
+
+#barre_recherche {
+    display: flex;
+}
+
+#barre_recherche_localisation {
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    font-size: 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 15px;
+}
+
+#barre_recherche input {
+    height: 40px;
+    text-align: center;
+    border:1px solid #F2F2F2;
+    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 16px;
+}
+
+#barre_recherche button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: #0065fc;
+    font-weight:bold;
+    border: 1px solid #0065fc;
+    border-radius: 0px 11px 10px 0;
+}
+
+.loupe{
+    display: none;
+}
+
+/*Affichage pour mobile*/
+@media only screen and (max-width: 768px) {
+
+
+
 }
