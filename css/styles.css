@@ -1,5 +1,5 @@
 /*Importation de la police Raleway à partir de google font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
 
 /*Définition de la proprietée box-sizing*/
 * {
@@ -25,7 +25,9 @@ header {
 
 /*Définition de la taille du logo pour l'adapter à la page*/
 #logo {
-width: 160px;
+width: 80px;
+margin-top: 30px;
+margin-bottom: 15px;
 }
 
 /*Mise en page du menu de navigation qui fait partie de la balise nav*/
@@ -48,23 +50,25 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
-    padding: 25px 10px 0 10px;
+    padding: 31px 10px 0 10px;
+    font-size: 14px;
 }
 
 nav a:hover {
     color: #0065FC;
-    border-top:3px solid #0065FC;
+    border-top:2px solid #0065FC;
 }
 
 /*Titre et description + la barre de recherche avec le bouton rechercher*/
 #recherche> h1 {
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 16px;
+
 }
 
 #recherche> p {
-    margin-top: 0;
-    font-size: 14px;
+    margin-top: 8px;
+    font-size: 12px;
 }
 
 #barre_recherche {
@@ -72,22 +76,22 @@ nav a:hover {
 }
 
 #barre_recherche_localisation {
+    display: flex;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     font-size: 15px;
     height: 40px;
-    display: flex;
     align-items: center;
     padding: 0px 10px 0px 10px;
 }
 
 #barre_recherche input {
     height: 40px;
-    text-align: center;
     border:1px solid #F2F2F2;
     font-weight: bold;
     font-family: "Raleway";
-    font-size: 16px;
+    font-size: 14px;
+    padding-left: 10px;
 }
 
 #barre_recherche button {
@@ -98,6 +102,7 @@ nav a:hover {
     font-weight:bold;
     border: 1px solid #0065fc;
     border-radius: 0px 11px 10px 0;
+    font-size: 14px;
 }
 
 #recherche_filtres{
@@ -118,10 +123,9 @@ nav a:hover {
     margin: 0 1%;
     border: 2px solid #F2F2F2;
     border-left: none;
-    border-radius: 56px 50px 50px 60px;
+    border-radius: 55px 50px 50px 60px;
     height: 42px;
     padding: 10px 10px 10px 0;
-    
 }
 
 .recherche_filtres_filtre:hover{
