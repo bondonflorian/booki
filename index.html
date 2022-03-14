@@ -9,30 +9,54 @@
         <title>Booki</title>
     </head>
         <body>
-            <header>
-                <nav>
-                    <img id="logo" src="./images/logo/Booki@3x.png" alt="Logo Booki">
-                        <ul>
-                            <li><a href="#hebergement">Hébergements</a></li>
-                            <li><a href="#activites">Activités</a></li>
-                        </ul>
-                </nav>
-                <section id="recherche">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                    <div id="barre_recherche">
-                        <div id="barre_recherche_localisation">
-                            <i class="fa-solid fa-location-dot"></i>
+            <div id="body_page">
+                <header>
+                    <nav>
+                        <img id="logo" src="./images/logo/Booki@3x.png" alt="Logo Booki">
+                            <ul>
+                                <li><a href="#hebergement">Hébergements</a></li>
+                                <li><a href="#activites">Activités</a></li>
+                            </ul>
+                    </nav>
+                    <section id="recherche">
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                        <div id="barre_recherche">
+                            <div id="barre_recherche_localisation">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <form id="barre_recherche_formulaire" method="post" action="#">
+                                <input type="text" name="barre_de_recherche" value="Marseille, France">
+                            </form>
+                            <button>
+                                <span class="rechercher">Rechercher</span>
+                            </button>
                         </div>
-                        <form id="barre_recherche_formulaire" method="POST" action="#">
-                            <input type="text" name="barre_de_recherche" value="Marseille, France">
-                        </form>
-                        <button>
-                            <span class="rechercher">Rechercher</span>
-                        </button>
-                    </div>
-                </section>
-            </header>
+                        <div id="recherche_filtres"> <!--Filtres du header-->
+                            <p>Filtres</p>
+                            <div class="recherche_filtres_filtre">
+                                <div><i class="fas fa-money-bill-wave logo_filtre" aria-hidden="true"></i></div>
+                                <p><a href="#">Economique</a></p>       
+                            </div>
+
+                            <div class="recherche_filtres_filtre">
+                                <div><i class="fas fa-child logo_filtre" aria-hidden="true"></i></div>                       
+                                <p><a href="#">Familial</a></p>
+                            </div>
+        
+                            <div class="recherche_filtres_filtre">
+                                <div><i class="fas fa-heart logo_filtre" aria-hidden="true"></i></div>
+                                <p><a href="#">Romantique</a></p>
+                            </div>
+        
+                            <div class="recherche_filtres_filtre">
+                                <div><i class="fas fa-dog logo_filtre" aria-hidden="true"></i></div>
+                                <p><a href="#">Animaux autorisés</a></p>
+                            </div>
+                        </div>
+                    </section>
+                </header>
+            </div>
 <footer>
 </footer>
         </body>

@@ -12,6 +12,12 @@ body {
     margin: 0;
 }
 
+/*On définit la taille de la page par rapport à la maquette*/
+#body_page {
+    max-width: 90%;
+    margin: auto;
+}
+
 /*On définit le block avec flex-box de la balise header*/
 header {
     display: block;
@@ -53,10 +59,12 @@ nav a:hover {
 /*Titre et description + la barre de recherche avec le bouton rechercher*/
 #recherche> h1 {
     margin-bottom: 0;
+    font-size: 20px;
 }
 
 #recherche> p {
     margin-top: 0;
+    font-size: 14px;
 }
 
 #barre_recherche {
@@ -70,7 +78,7 @@ nav a:hover {
     height: 40px;
     display: flex;
     align-items: center;
-    padding: 0px 10px 0px 15px;
+    padding: 0px 10px 0px 10px;
 }
 
 #barre_recherche input {
@@ -92,8 +100,61 @@ nav a:hover {
     border-radius: 0px 11px 10px 0;
 }
 
-.loupe{
-    display: none;
+#recherche_filtres{
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 20px;  
+    align-items: center;
+}
+
+#recherche_filtres>p{
+    font-weight: bold;
+    margin-right: 1%;
+}
+
+.recherche_filtres_filtre{
+    display: flex;
+    align-items: center;
+    margin: 0 1%;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+    border-radius: 56px 50px 50px 60px;
+    height: 42px;
+    padding: 10px 10px 10px 0;
+    
+}
+
+.recherche_filtres_filtre:hover{
+    background-color: #deebff;
+}
+
+.recherche_filtres_filtre  a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.recherche_filtres_filtre i{
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50px;
+    padding: 12px 14px 13px 14px;
+}
+
+#recherche__infos{
+    display: flex;
+    align-items: center;
+}
+
+#recherche__infos__i{
+    color: #0065fc;
+    font-size: 14px;
+    border: 2px solid #F2F2F2;
+    padding: 4px 9px 4px 9px;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 /*Affichage pour mobile*/
