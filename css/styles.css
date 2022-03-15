@@ -56,7 +56,7 @@ nav a {
 
 nav a:hover {
     color: #0065FC;
-    border-top:2px solid #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 /*Titre et description + la barre de recherche avec le bouton rechercher*/
@@ -105,19 +105,19 @@ nav a:hover {
     font-size: 14px;
 }
 
-#recherche_filtres{
+#recherche_filtres {
     display: flex;
     flex-wrap: wrap; 
     margin-top: 20px;  
     align-items: center;
 }
 
-#recherche_filtres>p{
+#recherche_filtres> p {
     font-weight: bold;
     margin-right: 1%;
 }
 
-.recherche_filtres_filtre{
+.recherche_filtres_filtre {
     display: flex;
     align-items: center;
     margin: 0 1%;
@@ -128,37 +128,113 @@ nav a:hover {
     padding: 10px 10px 10px 0;
 }
 
-.recherche_filtres_filtre:hover{
+.recherche_filtres_filtre:hover {
     background-color: #deebff;
 }
 
-.recherche_filtres_filtre  a{
+.recherche_filtres_filtre  a {
     text-decoration: none;
     color: black;
     font-weight: bold;
     margin: 0 10px;
 }
 
-.recherche_filtres_filtre i{
+.recherche_filtres_filtre i {
     color: #0065fc;
     background-color: #deebff;
     border-radius: 50px;
     padding: 12px 14px 13px 14px;
 }
 
-#recherche__infos{
+#recherche_infos {
     display: flex;
     align-items: center;
 }
 
-#recherche__infos__i{
+#recherche_infos_i {
     color: #0065fc;
-    font-size: 14px;
+    font-size: 10px;
     border: 2px solid #F2F2F2;
     padding: 4px 9px 4px 9px;
     border-radius: 50px;
     text-align: center;
     margin-right: 10px;
+}
+
+/*La partie hebergement à Marseille*/
+#hebergement_marseille {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+}
+
+#hebergement_marseille> h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin: 20px 0 0 20px;
+}
+
+#hebergement_marseille> a {
+    text-decoration: none;
+    display: flex;
+    color: black;
+    margin: 40px 0 10px 20px;
+}
+
+#hebergement_marseille_block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#hebergement_marseille_block> a {
+    text-decoration: none;
+    color: black;
+}
+
+.hebergement_marseille_petit_block {
+    background-color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+}
+
+.hebergement_marseille_petit_block> p {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.hebergement_marseille_petit_block> h3 {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.star {
+    color: #0065FC;
+    font-size: 10px;
+    margin: 0 0 2px 5px;
+}
+
+.grey {
+    color: rgb(217,217,217);
+}
+
+.hebergement_marseille_image {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergement_marseille_image> img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*Affichage pour mobile*/

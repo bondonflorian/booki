@@ -1,63 +1,174 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./css/styles.css" rel="stylesheet" type="text/css" />
-        <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="./fontawesome/css/all.min.css"> 
-        <title>Booki</title>
-    </head>
-        <body>
-            <div id="body_page">
-                <header>
-                    <nav>
-                        <img id="logo" src="./images/logo/Booki@3x.png" alt="Logo Booki">
-                            <ul>
-                                <li><a href="#hebergement">Hébergements</a></li>
-                                <li><a href="#activites">Activités</a></li>
-                            </ul>
-                    </nav>
-                    <section id="recherche">
-                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                        <p>En plein centre ville ou en pleine nature</p>
-                        <div id="barre_recherche">
-                            <div id="barre_recherche_localisation">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <form id="barre_recherche_formulaire" method="post" action="#">
-                                <input type="text" name="barre_de_recherche" value="Marseille, France">
-                            </form>
-                            <button>
-                                <span class="rechercher">Rechercher</span>
-                            </button>
-                        </div>
-                        <div id="recherche_filtres">
-                            <p>Filtres</p>
-                            <div class="recherche_filtres_filtre">
-                                <div><i class="fas fa-money-bill-wave logo_filtre" aria-hidden="true"></i></div>
-                                <p><a href="#">Economique</a></p>       
-                            </div>
 
-                            <div class="recherche_filtres_filtre">
-                                <div><i class="fas fa-child logo_filtre" aria-hidden="true"></i></div>                       
-                                <p><a href="#">Familial</a></p>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <title>Booki</title>
+</head>
+
+<body>
+    <div id="body_page">
+        <header>
+            <nav>
+                <img id="logo" src="./images/logo/Booki@3x.png" alt="Logo Booki">
+                <ul>
+                    <li><a href="#hebergement">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
+            </nav>
+            <section id="recherche">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <div id="barre_recherche">
+                    <div id="barre_recherche_localisation">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <form id="barre_recherche_formulaire" method="post" action="#">
+                        <input type="text" name="barre_de_recherche" value="Marseille, France">
+                    </form>
+                    <button>
+                        <span class="rechercher">Rechercher</span>
+                    </button>
+                </div>
+                <div id="recherche_filtres">
+                    <p>Filtres</p>
+                    <div class="recherche_filtres_filtre">
+                        <div><i class="fas fa-money-bill-wave logo_filtre"></i></div>
+                        <p><a href="#">Economique</a></p>
+                    </div>
+
+                    <div class="recherche_filtres_filtre">
+                        <div><i class="fas fa-child logo_filtre"></i></div>
+                        <p><a href="#">Familial</a></p>
+                    </div>
+
+                    <div class="recherche_filtres_filtre">
+                        <div><i class="fas fa-heart logo_filtre"></i></div>
+                        <p><a href="#">Romantique</a></p>
+                    </div>
+
+                    <div class="recherche_filtres_filtre">
+                        <div><i class="fas fa-dog logo_filtre"></i></div>
+                        <p><a href="#">Animaux autorisés</a></p>
+                    </div>
+                </div>
+                <div id="recherche_infos">
+                    <div id="recherche_infos_i"><i class="fas fa-info"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+                </div>
+            </section>
+        </header>
+        <section id="hebergement">
+            <div id="hebergement_marseille">
+                <h2>Hébergements à Marseille</h2>
+                <div id="hebergement_marseille_block">
+                    <a href="#">
+                        <div class="hebergement_marseille_petit_block">
+                            <div class="hebergement_marseille_image">
+                                <img src="./images/hebergements/4_small/auberge_la_cannebiere_s.jpg" alt="Auberge la cannebière">
                             </div>
-        
-                            <div class="recherche_filtres_filtre">
-                                <div><i class="fas fa-heart logo_filtre" aria-hidden="true"></i></div>
-                                <p><a href="#">Romantique</a></p>
-                            </div>
-        
-                            <div class="recherche_filtres_filtre">
-                                <div><i class="fas fa-dog logo_filtre" aria-hidden="true"></i></div>
-                                <p><a href="#">Animaux autorisés</a></p>
+                            <h3>Auberge La Cannebière</h3>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
                             </div>
                         </div>
-                    </section>
-                </header>
+                    </a>
+                    <a href="#">
+                        <div class="hebergement_marseille_petit_block">
+                            <div class="hebergement_marseille_image">
+                                <img src="./images/hebergements/4_small/hotel_du_port_s.jpg" alt="Hôtel du port">
+                            </div>
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de <strong>52€</strong></p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hebergement_marseille_petit_block">
+                            <div class="hebergement_marseille_image">
+                                <img src="./images/hebergements/4_small/hotel_les_mouettes_s.jpg" alt="Hôtel les mouettes">
+                            </div>
+                            <h3>Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de <strong>76€</strong></p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hebergement_marseille_petit_block">
+                            <div class="hebergement_marseille_image">
+                                <img src="./images/hebergements/4_small/hotel_de_la_mer_s.jpg" alt="Hôtel de la mer">
+                            </div>
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de <strong>46€</strong></p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hebergement_marseille_petit_block">
+                            <div class="hebergement_marseille_image">
+                                <img src="./images/hebergements/4_small/auberge_le_panier_s.jpg" alt="Auberge le panier">
+                            </div>
+                            <h3>Auberge Le Panier</h3>
+                            <p>Nuit à partir de <strong>23€</strong></p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star grey"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="hebergement_marseille_petit_block">
+                            <div class="hebergement_marseille_image">
+                                <img src="./images/hebergements/4_small/hotel_chez_amina_s.jpg" alt="Hôtel chez Amina">
+                            </div>
+                            <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de <strong>96€</strong></p>
+                            <div class="star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#"><p></p>Afficher plus</p></a>
             </div>
-<footer>
-</footer>
-        </body>
+        </section>
+    </div>
+    <footer>
+    </footer>
+</body>
 </html>
