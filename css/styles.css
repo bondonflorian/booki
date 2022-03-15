@@ -148,7 +148,9 @@ nav a:hover {
 
 #recherche_infos {
     display: flex;
+    margin: 10px 0 20px 0;
     align-items: center;
+    font-size: 12px;
 }
 
 #recherche_infos_i {
@@ -162,6 +164,11 @@ nav a:hover {
 }
 
 /*La partie hebergement à Marseille*/
+#hebergement {
+    display: flex;
+    justify-content: space-between;
+}
+
 #hebergement_marseille {
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -235,6 +242,59 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/*Section les plus populaires*/
+#populaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+#populaire_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#populaire_titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-size: 14px;
+}
+
+#populaire_titre> i {
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.populaire_petit_block {
+    display: flex;
+    width: 80%;
+    height: 150px;
+    background-color: white;
+    margin: 10px 0px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+}
+
+.populaire_petit_block img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.populaire_text_block {
+    font-size: 12px;
+    padding-left: 15px;
 }
 
 /*Affichage pour mobile*/
