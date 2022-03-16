@@ -14,7 +14,7 @@ body {
 
 /*On définit la taille de la page par rapport à la maquette*/
 #body_page {
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -133,17 +133,20 @@ nav a:hover {
 }
 
 .recherche_filtres_filtre  a {
+    display: flex;
+    border-left: none;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
+    align-items: center;
 }
 
 .recherche_filtres_filtre i {
     color: #0065fc;
     background-color: #deebff;
     border-radius: 50px;
-    padding: 12px 14px 13px 14px;
+    padding: 12px 14px 12px 14px;
 }
 
 #recherche_infos {
@@ -166,57 +169,67 @@ nav a:hover {
 /*La partie hebergement à Marseille*/
 #hebergement {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
 }
 
 #hebergement_marseille {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 50%;
-    padding: 20px;
+    width: 70%;
+    margin-right: 30px;
 }
 
 #hebergement_marseille> h2 {
     font-size: 18px;
-    margin-bottom: 0;
-    margin: 20px 0 0 20px;
+    margin: 3% 0 1% 3%;
 }
 
-#hebergement_marseille> a {
+#hebergement_marseille> h3 {
+    font-size: 16px;
+}
+
+#hebergement_marseille a {
     text-decoration: none;
-    display: flex;
     color: black;
-    margin: 40px 0 10px 20px;
 }
 
 #hebergement_marseille_block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-#hebergement_marseille_block> a {
-    text-decoration: none;
-    color: black;
-}
-
 .hebergement_marseille_petit_block {
-    background-color: #FFFFFF;
-    border: 5px solid #FFFFFF;
-    margin-top: 20px;
-    width: 250px;
-    border-radius: 20px;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    width: 25%;
+    margin: 3% 2% 0 0;
+    padding: 5px 5px;
+    border-radius: 20px ;
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
-.hebergement_marseille_petit_block> p {
+.hebergement_marseille_petit_block p {
     margin: 5px;
     font-size: 12px;
 }
 
-.hebergement_marseille_petit_block> h3 {
+.hebergement_marseille_petit_block h3 {
     margin: 5px;
     font-size: 14px;
+}
+
+.hebergement_marseille_petit_block img {
+    height: 130px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.hebergement_marseille_text {
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .star {
@@ -229,27 +242,12 @@ nav a:hover {
     color: rgb(217,217,217);
 }
 
-.hebergement_marseille_image {
-    height: 120px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 20px 20px 0 0;
-}
-
-.hebergement_marseille_image> img {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 /*Section les plus populaires*/
 #populaire {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 27%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -266,21 +264,27 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    font-size: 14px;
+    width: 84%;
 }
 
 #populaire_titre> i {
+    font-size: 12px;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
+    margin: 10% 5% 3% 0;
+}
+
+#populaire_titre> h2 {
+    font-size: 18px;
+    margin: 10% 0 3% 6%;
 }
 
 .populaire_petit_block {
     display: flex;
     width: 80%;
-    height: 150px;
+    height: 130px;
     background-color: white;
-    margin: 10px 0px;
+    margin: 4% 0px;
     padding: 5px 5px;
     border-radius: 20px;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
@@ -293,8 +297,22 @@ nav a:hover {
 }
 
 .populaire_text_block {
+    padding-left: 20px;
+}
+
+.populaire_text_block> h3 {
+    font-size: 16px;
+    margin: 5% 0 5% 0;
+}
+
+.populaire_text_block> p {
     font-size: 12px;
-    padding-left: 15px;
+    margin: 0 0 20% 0;
+}
+
+.star_populaire {
+    color: #0065FC;
+    font-size: 10px;
 }
 
 /*Affichage pour mobile*/
