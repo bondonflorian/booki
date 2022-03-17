@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 /*On met en place dans les balises body la police importé Raleway*/
 body {
     font-family: 'Raleway', sans-serif;
@@ -112,6 +116,10 @@ nav a:hover {
     align-items: center;
 }
 
+#recherche_filtres a {
+    margin-right: 1%;
+}
+
 #recherche_filtres> p {
     font-weight: bold;
     margin-right: 1%;
@@ -120,7 +128,6 @@ nav a:hover {
 .recherche_filtres_filtre {
     display: flex;
     align-items: center;
-    margin: 0 1%;
     border: 1px solid #F2F2F2;
     border-left: none;
     border-radius: 56px 50px 50px 60px;
@@ -132,7 +139,7 @@ nav a:hover {
     background-color: #deebff;
 }
 
-.recherche_filtres_filtre  a  {
+.recherche_filtres_filtre  p {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -283,7 +290,7 @@ nav a:hover {
 
 .populaire_petit_block {
     display: flex;
-    width: 80%;
+    width: 85%;
     height: 145px;
     background-color: white;
     margin: 4% 0px;
@@ -309,7 +316,7 @@ nav a:hover {
 }
 
 .populaire_text_block> h3 {
-    font-size: 16px;
+    font-size: 14px;
     margin: 5% 0 5% 0;
 }
 
