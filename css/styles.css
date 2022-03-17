@@ -121,9 +121,9 @@ nav a:hover {
     display: flex;
     align-items: center;
     margin: 0 1%;
-    border: 2px solid #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-left: none;
-    border-radius: 55px 50px 50px 60px;
+    border-radius: 56px 50px 50px 60px;
     height: 42px;
     padding: 10px 10px 10px 0;
 }
@@ -132,14 +132,11 @@ nav a:hover {
     background-color: #deebff;
 }
 
-.recherche_filtres_filtre  a {
-    display: flex;
-    border-left: none;
+.recherche_filtres_filtre  a  {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin: 0 10px 0 0;
-    align-items: center;
+    margin: 0 10px;
 }
 
 .recherche_filtres_filtre i {
@@ -177,13 +174,13 @@ nav a:hover {
 #hebergement_marseille {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 70%;
-    margin-right: 30px;
+    width: 68%;
+    margin-right: 3%;
 }
 
 #hebergement_marseille> h2 {
     font-size: 18px;
-    margin: 3% 0 1% 3%;
+    margin: 4% 0 0 5%;
 }
 
 #hebergement_marseille> h3 {
@@ -195,6 +192,11 @@ nav a:hover {
     color: black;
 }
 
+#hebergement_marseille> p {
+    font-size: 14px;
+    margin: 3% 0 4% 5%;
+}
+
 #hebergement_marseille_block {
     display: flex;
     justify-content: space-evenly;
@@ -203,8 +205,8 @@ nav a:hover {
 
 .hebergement_marseille_petit_block {
     background-color: white;
-    width: 25%;
-    margin: 3% 2% 0 0;
+    width: 27%;
+    margin: 3% 0 0 0;
     padding: 5px 5px;
     border-radius: 20px ;
     box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
@@ -271,18 +273,18 @@ nav a:hover {
     font-size: 12px;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
-    margin: 10% 5% 3% 0;
+    margin: 10% 5% 1% 0;
 }
 
 #populaire_titre> h2 {
     font-size: 18px;
-    margin: 10% 0 3% 6%;
+    margin: 13% 0 4% 5%;
 }
 
 .populaire_petit_block {
     display: flex;
     width: 80%;
-    height: 130px;
+    height: 145px;
     background-color: white;
     margin: 4% 0px;
     padding: 5px 5px;
@@ -294,6 +296,12 @@ nav a:hover {
     width: 40%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
+}
+
+.populaire_petit_block a {
+    display: flex;
+    text-decoration: none;
+    color: black;
 }
 
 .populaire_text_block {
@@ -313,6 +321,116 @@ nav a:hover {
 .star_populaire {
     color: #0065FC;
     font-size: 10px;
+}
+
+/*Section activités de la page*/
+#activites {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#activites_marseille {
+    width: 100%;
+}
+
+#activites_marseille h2 {
+    font-size: 18px;
+    margin: 4% 0 3% 0;
+}
+
+#activites_marseille h3 {
+    font-size: 14px;
+    margin: 6% 0 0 5%;
+}
+
+#activites_marseille a {
+    text-decoration: none;
+    color: black;
+}
+
+#activites_marseille_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activites_grand_block {
+    width: 20%;
+    height: 420px;
+    border-radius: 20px;
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activites_grand_block img {
+    height: 360px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.activites_petit_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24%;
+}
+
+#activites_petit_block1 {
+    width: 90%;
+    height: 185px;
+    border-radius: 20px;
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+#activites_petit_block1 img {
+    height: 125px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#activites_petit_block2 {
+    width: 90%;
+    height: 185px;
+    border-radius: 20px;
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+#activites_petit_block2 img {
+    height: 125px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#activites_petit_block3 {
+    width: 90%;
+    height: 185px;
+    border-radius: 20px;
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+#activites_petit_block3 img {
+    height: 125px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#activites_petit_block4 {
+    width: 90%;
+    height: 185px;
+    border-radius: 20px;
+    box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+#activites_petit_block4 img {
+    height: 125px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 /*Affichage pour mobile*/
