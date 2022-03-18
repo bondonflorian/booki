@@ -170,6 +170,10 @@ nav a:hover {
     margin-right: 10px;
 }
 
+button .loupe {
+    display: none;
+}
+
 /*La partie hebergement à Marseille*/
 #hebergement {
     display: flex;
@@ -332,10 +336,10 @@ nav a:hover {
 
 .populaire_text_block> p {
     font-size: 12px;
-    margin: 0 0 45% 0;
 }
 
 .star_populaire {
+    display: flex;
     color: #0065FC;
     font-size: 10px;
 }
@@ -500,7 +504,158 @@ footer a:hover {
 
 /*Affichage pour mobile*/
 @media only screen and (max-width: 768px) {
+/* Configuration de la page et du logo */
+#body_page {
+    margin: 0;
+    max-width: 100%;
+}
 
+#body_page h3 {
+    font-size: 17px;
+}
 
+/* La navigation mobile */
 
+#logo {
+    margin: 0;
+    width: 150px;
+}
+
+nav {
+    flex-direction: column;
+}
+
+nav ul {
+    width: 100%;
+    padding: 0 0 11px 0;
+}
+
+nav li {
+    width: 50%;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
+}
+ nav li:hover {
+     border-bottom: 3px solid #0065FC;
+ }
+
+ nav a:hover {
+     border-top: none;
+ }
+
+/*  La partie recherche mobile du site */
+
+#recherche> h1 {
+    margin-left: 2%;
+}
+
+#recherche> p {
+    align-self: stretch;
+    margin-left: 2%;
+}
+
+#barre_recherche form {
+    width: 187px;
+}
+
+#barre_recherche input {
+    width: 197px;
+    border-right: none;
+}
+
+#barre_recherche button {
+    width: 45px;
+    border-radius: 10px;
+}
+
+button .loupe {
+    display: block;
+}
+
+button .rechercher {
+    display: none;
+}
+
+/* Les différents filtres version mobile */
+#recherche_filtres {
+    justify-content: initial;
+}
+
+#recherche_filtres> p {
+    display: block;
+    width: 100%;
+    padding-left: 1%;
+}
+
+.recherche_filtres_filtre {
+    margin: 0 5% 8% 1%;
+    border: 2px solid #F2F2F2;
+    border-left: none;
+}
+
+/* La partie hébergement du site version mobile */
+#hebergement_marseille {
+    background: none;
+}
+
+.hebergement_marseille_petit_block {
+    width: 80%;
+}
+
+.hebergement_marseille_petit_block:hover {
+    width: 80%;
+}
+
+.hebergement_marseille_text {
+    font-size: 15px;
+}
+
+.hebergement_marseille_text .star {
+    font-size: 14px;
+}
+
+/* La partie les plus populaires version mobile */
+
+.populaire_petit_block {
+    width: 80%;
+    height: 165px;
+}
+
+.populaire_petit_block img {
+    width: 40%;
+}
+
+.populaire_petit_block:hover {
+    width: 80%;
+}
+
+.populaire_petit_block> p {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.populaire_petit_block .star {
+    font-size: 14px;
+}
+
+/* La section activité version mobile */
+#activites>h2 {
+    margin-bottom: 30px;
+}
+
+#activites_marseille_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#activites_marseille_block h3 {
+    font-size: 15px;
+}
+
+.activites_grand_block img {
+    height: 250px;
+    min-width: 100%;
+}
 }
