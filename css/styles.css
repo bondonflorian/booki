@@ -656,7 +656,7 @@ footer a:hover {
         height: 200px;
     }
 
-    #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 img {
+    #activites_petit_block1 img, #activites_petit_block2 img, #activites_petit_block3 img, #activites_petit_block4 img {
         height: 155px;
     }
 
@@ -892,7 +892,7 @@ button .rechercher {
 
 .activites_grand_block {
     width: 90%;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
     height: 200px;
 }
 
@@ -903,13 +903,13 @@ button .rechercher {
 }
 
 #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 {
-    height: 250px;
+    height: 200px;
     width: 90%;
-    margin-bottom: 20px ;
+    margin-bottom: 25px ;
 }
 
-#activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 img {
-    height: 200px;
+#activites_petit_block1 img, #activites_petit_block2 img, #activites_petit_block3 img, #activites_petit_block4 img {
+    height: 150px;
 }
 
 /* Le bas de page version mobile */
