@@ -8,7 +8,6 @@
 
 a {
     text-decoration: none !important;
-    color: black !important;
 }
 
 /*On met en place dans les balises body la police importé Raleway*/
@@ -30,9 +29,9 @@ header {
 
 /*Définition de la taille du logo pour l'adapter à la page*/
 #logo {
-    width: 80px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+width: 80px;
+margin-top: 30px;
+margin-bottom: 15px;
 }
 
 /*Mise en page du menu de navigation qui fait partie de la balise nav*/
@@ -53,6 +52,8 @@ nav li {
 }
 
 nav a {
+    text-decoration: none;
+    color: black;
     padding: 31px 10px 0 10px;
     font-size: 14px;
 }
@@ -139,6 +140,8 @@ nav a:hover {
 }
 
 .recherche_filtres_filtre  p {
+    text-decoration: none;
+    color: black;
     font-weight: bold;
     margin: 0 10px;
     font-size: 14px;
@@ -195,6 +198,11 @@ button .loupe {
 
 #hebergement_marseille> h3 {
     font-size: 16px;
+}
+
+#hebergement_marseille a {
+    text-decoration: none;
+    color: black;
 }
 
 #hebergement_marseille> p {
@@ -272,7 +280,6 @@ button .loupe {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    margin: 4px 0 0 0;
 }
 
 #populaire_titre {
@@ -286,7 +293,7 @@ button .loupe {
     font-size: 12px;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 #populaire_titre> h2 {
@@ -296,10 +303,10 @@ button .loupe {
 
 .populaire_petit_block {
     display: flex;
-    width: 340px;
+    width: 85%;
     height: 145px;
     background-color: white;
-    margin: 15px 0px;
+    margin: 4% 0px;
     padding: 5px 5px;
     border-radius: 20px;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
@@ -325,6 +332,8 @@ button .loupe {
 
 .populaire_petit_block a {
     display: flex;
+    text-decoration: none;
+    color: black;
 }
 
 .populaire_text_block {
@@ -332,8 +341,9 @@ button .loupe {
 }
 
 .populaire_text_block> h3 {
+    width: 250px;
+    padding-right: 60px;
     font-size: 14px;
-    width: 150px;
     margin: 5% 0 5% 0;
 }
 
@@ -345,7 +355,6 @@ button .loupe {
     display: flex;
     color: #0065FC;
     font-size: 10px;
-    padding: 40px 0 0 0;
 }
 
 /*Section activités de la page*/
@@ -368,6 +377,11 @@ button .loupe {
 #activites_marseille h3 {
     font-size: 14px;
     margin: 4% 0 0 5%;
+}
+
+#activites_marseille a {
+    text-decoration: none;
+    color: black;
 }
 
 #activites_marseille_block {
@@ -485,7 +499,7 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 1% 35% 1% 10%;
+    padding: 1% 30% 1% 10%;
     margin-top: 3%;
     height: 200px;
 }
@@ -501,6 +515,170 @@ footer a {
 
 footer a:hover {
     font-weight: bold;
+}
+
+/* La version tablette du site */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+    #recherche{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #recherche> h1{
+        font-size: 28px;
+    }
+
+    #recherche> p{
+        font-size: 21px;
+    }
+
+    #barre_recherche{
+        margin-top: 10px;
+    }
+
+    #barre_recherche_localisation{
+        font-size: 20px;
+        height: 45px;
+    }
+
+    #barre_recherche input{
+        height: 45px;
+        border:1px solid #F2F2F2;
+        font-size: 17px;
+    }
+
+    #barre_recherche button{
+        height: 45px;
+        width: 110px;
+        font-size: 16px;
+    }
+
+    #recherche_infos{
+        margin-top: 10px;
+    }
+
+    #recherche_filtres{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .recherche_filtres_filtre{
+        margin: 0 8px;
+        height: 45px;
+    }
+    .recherche_filtres_filtre i{
+        padding: 14px;
+    }
+
+    #recherche_filtres>p{
+        display: none;
+    }
+
+
+    /*La partie hébergement version tablette*/
+
+    #hébergements {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #hébergements_marseille_block {
+        order: 2;
+        width: 100%;
+        margin-top: 50px;
+    }
+    #populaire{
+        order:1;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hébergement_marseille_petit_block {
+        width: 45%;
+    }
+    .hébergement_marseille_petit_block:hover {
+        width: 48%;
+    }
+
+    .hébergement_marseille_text {
+        padding-left: 20px;
+        font-size: 16px;
+    }
+
+    .star {
+        font-size: 15px;
+    }
+
+    .populaire_text_block {
+        font-size: 18px;
+        padding-left: 25px;
+    }
+    .star_populaire {
+        font-size: 16px;
+    }
+
+
+
+
+    /* Page activités version tablette */
+
+
+    #activites>h2{
+        padding-left: 20px;
+    }
+
+    .activites_grand_block{
+        height: 465px;
+        width: 45%;
+        margin: 20px 0;
+    }
+
+    .activites_grand_block:hover{
+        width: 50%;
+    }
+
+    .activites_grand_block img{
+        height: 420px;
+    }
+    .activites_grand_block h3{
+        padding: 5px 0 0 20px;
+        font-size: 20px;
+    }
+
+    .activites_petit_block{
+        width: 45%;
+        margin: 20px 0;
+    }
+    #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 {
+        height: 200px;
+    }
+
+    #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 img {
+        height: 155px;
+    }
+
+    .activites_petit_block h3{
+        padding: 5px 0 0 20px;
+        font-size: 20px;
+    }
+
+
+    footer { 
+        justify-content: space-around;
+        padding: 20px 0 0 0;
+    }
+
+    #footer_propos{
+        width: 30%;
+    }
+
+    #footer_hébergements{
+        width: 30%;
+    }
+
 }
 
 /*Affichage pour mobile*/
@@ -675,17 +853,21 @@ button .rechercher {
     padding-bottom: 40px;
 }
 
+/* Correction d'un bug de mise en page ou l'image était rogné par la gauche du texte sur le bloc du milieu */
+.populaire_text_block> h3 {
+    font-size: 17px;
+    padding-right: 15px;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
 .populaire_petit_block {
-    width: 90%;
+    width: 100%;
     margin: 10px 0 0 0;
 }
 
 #populaire_titre {
     width: 90%;
-}
-
-.populaire_text_block {
-    width: 250px;
 }
 
 /* La section activité version mobile */
@@ -751,169 +933,5 @@ footer p {
 #footer_assistance{
     width: 100%;
 }
-
-}
-
-/* La version tablette du site */
-
-@media only screen and (max-width: 992px){
-
-    #recherche{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #recherche> h1{
-        font-size: 28px;
-    }
-
-    #recherche> p{
-        font-size: 21px;
-    }
-
-    #barre_recherche{
-        margin-top: 10px;
-    }
-
-    #barre_recherche_localisation{
-        font-size: 20px;
-        height: 45px;
-    }
-
-    #barre_recherche input{
-        height: 45px;
-        border:1px solid #F2F2F2;
-        font-size: 17px;
-    }
-
-    #barre_recherche button{
-        height: 45px;
-        width: 110px;
-        font-size: 16px;
-    }
-
-    #recherche_infos{
-        margin-top: 10px;
-    }
-
-    #recherche_filtres{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .recherche_filtres_filtre{
-        margin: 0 8px;
-        height: 45px;
-    }
-    .recherche_filtres_filtre i{
-        padding: 14px;
-    }
-
-    #recherche_filtres>p{
-        display: none;
-    }
-
-
-    /*La partie hébergement version tablette*/
-
-    #hébergements {
-        display: flex;
-        flex-direction: column;
-
-    }
-    #hébergements_marseille_block {
-        order: 2;
-        width: 100%;
-        margin-top: 50px;
-    }
-    #populaire{
-        order:1;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .hébergement_marseille_petit_block {
-        width: 45%;
-    }
-    .hébergement_marseille_petit_block:hover {
-        width: 48%;
-    }
-
-    .hébergement_marseille_text {
-        padding-left: 20px;
-        font-size: 16px;
-    }
-
-    .star {
-        font-size: 15px;
-    }
-
-    .populaire_text_block {
-        font-size: 18px;
-        padding-left: 25px;
-    }
-    .star_populaire {
-        font-size: 16px;
-    }
-
-
-
-
-    /* Page activités versionn tablette */
-
-
-    #activites>h2{
-        padding-left: 20px;
-    }
-
-    .activites_grand_block{
-        height: 465px;
-        width: 45%;
-        margin: 20px 0;
-    }
-
-    .activites_grand_block:hover{
-        width: 50%;
-    }
-
-    .activites_grand_block img{
-        height: 420px;
-    }
-    .activites_grand_block h3{
-        padding: 5px 0 0 20px;
-        font-size: 20px;
-    }
-
-    .activites_petit_block{
-        width: 45%;
-        margin: 20px 0;
-    }
-    #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 {
-        height: 200px;
-    }
-
-    #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 img {
-        height: 155px;
-    }
-
-    .activites_petit_block h3{
-        padding: 5px 0 0 20px;
-        font-size: 20px;
-    }
-
-
-    footer { 
-        justify-content: space-around;
-        padding: 20px 0 0 0;
-    }
-
-    #footer_propos{
-        width: 30%;
-    }
-
-    #footer_hébergements{
-        width: 30%;
-    }
 
 }
