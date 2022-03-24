@@ -29,9 +29,9 @@ header {
 
 /*Définition de la taille du logo pour l'adapter à la page*/
 #logo {
-width: 80px;
-margin-top: 30px;
-margin-bottom: 15px;
+    width: 80px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 /*Mise en page du menu de navigation qui fait partie de la balise nav*/
@@ -548,7 +548,7 @@ footer a:hover {
     #barre_recherche button{
         height: 45px;
         width: 110px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     #recherche_infos{
@@ -561,7 +561,7 @@ footer a:hover {
     }
 
     .recherche_filtres_filtre{
-        margin: 0 8px;
+        margin: 0 10px 10px 0;
         height: 45px;
     }
     .recherche_filtres_filtre i{
@@ -575,36 +575,63 @@ footer a:hover {
 
     /*La partie hébergement version tablette*/
 
-    #hébergements {
+    #hebergement {
         display: flex;
         flex-direction: column;
 
     }
-    #hébergements_marseille_block {
+
+    #hebergement_marseille {
+        width: 100%;
+    }
+
+    #hebergement_marseille> h2 {
+        margin: 0 0 10px 25px;
+    }
+
+    #hebergements_marseille_block {
         order: 2;
         width: 100%;
         margin-top: 50px;
     }
-    #populaire{
-        order:1;
-        width: 100%;
-        margin-top: 10px;
-    }
 
-    .hébergement_marseille_petit_block {
+    .hebergement_marseille_petit_block {
         width: 45%;
     }
-    .hébergement_marseille_petit_block:hover {
+    .hebergement_marseille_petit_block:hover {
         width: 48%;
     }
 
-    .hébergement_marseille_text {
+    .hebergement_marseille_text {
         padding-left: 20px;
         font-size: 16px;
     }
 
     .star {
         font-size: 15px;
+    }
+
+    /* La partie les plus populaires version tablette */
+    #populaire{
+        order: 1;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+        align-items: flex-start;
+    }
+
+    #populaire_titre {
+        justify-content: space-between;
+        width: 66%;
+    }
+
+    #populaire_titre> i {
+        margin-bottom: 20px;
+    }
+
+    .populaire_petit_block {
+        width: 100%;
     }
 
     .populaire_text_block {
@@ -617,22 +644,15 @@ footer a:hover {
 
 
 
-
     /* Page activités version tablette */
-
-
     #activites>h2{
         padding-left: 20px;
     }
 
     .activites_grand_block{
-        height: 465px;
+        height: 475px;
         width: 45%;
         margin: 20px 0;
-    }
-
-    .activites_grand_block:hover{
-        width: 50%;
     }
 
     .activites_grand_block img{
@@ -647,12 +667,14 @@ footer a:hover {
         width: 45%;
         margin: 20px 0;
     }
+
     #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 {
-        height: 200px;
+        height: 217px;
+        width: 100%;
     }
 
     #activites_petit_block1 img, #activites_petit_block2 img, #activites_petit_block3 img, #activites_petit_block4 img {
-        height: 155px;
+        height: 161px;
     }
 
     .activites_petit_block h3{
@@ -660,18 +682,9 @@ footer a:hover {
         font-size: 20px;
     }
 
-
     footer { 
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 20px 0 0 0;
-    }
-
-    #footer_propos{
-        width: 30%;
-    }
-
-    #footer_hébergements{
-        width: 30%;
     }
 
 }
