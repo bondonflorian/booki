@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none !important;
+    color: black !important;
 }
 
 /*On met en place dans les balises body la police importé Raleway*/
@@ -179,6 +180,7 @@ button .loupe {
 #hebergement {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 10px;
 }
@@ -188,21 +190,17 @@ button .loupe {
     border-radius: 20px;
     width: 68%;
     margin-right: 3%;
+    margin-bottom: 10px;
     padding: 40px 0 0 0;
 }
 
 #hebergement_marseille> h2 {
     font-size: 18px;
-    margin: 0 0 0 5%;
+    margin: 0 0 0 45px;
 }
 
 #hebergement_marseille> h3 {
     font-size: 16px;
-}
-
-#hebergement_marseille a {
-    text-decoration: none;
-    color: black;
 }
 
 #hebergement_marseille> p {
@@ -268,10 +266,10 @@ button .loupe {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 27%;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 40px 0 0 0;
+    margin-bottom: 10px;
 }
 
 #populaire_block {
@@ -280,6 +278,7 @@ button .loupe {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 #populaire_titre {
@@ -287,6 +286,7 @@ button .loupe {
     justify-content: space-between;
     align-items: center;
     width: 84%;
+    margin-bottom: 5px;
 }
 
 #populaire_titre> i {
@@ -298,7 +298,7 @@ button .loupe {
 
 #populaire_titre> h2 {
     font-size: 18px;
-    margin: 0 0 4% 2%;
+    margin: 0 0 10px 5px;
 }
 
 .populaire_petit_block {
@@ -335,7 +335,7 @@ button .loupe {
 }
 
 .populaire_text_block> h3 {
-    width: 100%;
+    width: 80%;
     font-size: 14px;
     margin: 5% 0 5% 0;
     padding-right: 46px;
@@ -516,59 +516,59 @@ footer a:hover {
 
 @media all and (min-width: 768px) and (max-width: 992px) {
 
-    #recherche{
+    #recherche {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #recherche> h1{
+    #recherche> h1 {
         font-size: 28px;
     }
 
-    #recherche> p{
+    #recherche> p {
         font-size: 21px;
     }
 
-    #barre_recherche{
+    #barre_recherche {
         margin-top: 10px;
     }
 
-    #barre_recherche_localisation{
+    #barre_recherche_localisation {
         font-size: 20px;
         height: 45px;
     }
 
-    #barre_recherche input{
+    #barre_recherche input {
         height: 45px;
         border:1px solid #F2F2F2;
         font-size: 17px;
     }
 
-    #barre_recherche button{
+    #barre_recherche button {
         height: 45px;
         width: 110px;
         font-size: 14px;
     }
 
-    #recherche_infos{
+    #recherche_infos {
         margin-top: 10px;
     }
 
-    #recherche_filtres{
+    #recherche_filtres {
         width: 100%;
         justify-content: center;
     }
 
-    .recherche_filtres_filtre{
+    .recherche_filtres_filtre {
         margin: 0 10px 10px 0;
         height: 45px;
     }
-    .recherche_filtres_filtre i{
+    .recherche_filtres_filtre i {
         padding: 14px;
     }
 
-    #recherche_filtres>p{
+    #recherche_filtres>p {
         display: none;
     }
 
@@ -612,7 +612,7 @@ footer a:hover {
     }
 
     /* La partie les plus populaires version tablette */
-    #populaire{
+    #populaire {
         order: 1;
         width: 100%;
         margin-top: 10px;
@@ -645,25 +645,25 @@ footer a:hover {
 
 
     /* Page activités version tablette */
-    #activites>h2{
+    #activites>h2 {
         padding-left: 20px;
     }
 
-    .activites_grand_block{
+    .activites_grand_block {
         height: 475px;
         width: 45%;
         margin: 20px 0;
     }
 
-    .activites_grand_block img{
+    .activites_grand_block img {
         height: 420px;
     }
-    .activites_grand_block h3{
+    .activites_grand_block h3 {
         padding: 5px 0 0 20px;
         font-size: 20px;
     }
 
-    .activites_petit_block{
+    .activites_petit_block {
         width: 45%;
         margin: 20px 0;
     }
@@ -677,7 +677,7 @@ footer a:hover {
         height: 161px;
     }
 
-    .activites_petit_block h3{
+    .activites_petit_block h3 {
         padding: 5px 0 0 20px;
         font-size: 20px;
     }
@@ -853,7 +853,7 @@ button .rechercher {
 }
 
 /* La partie les plus populaires version mobile */
-#populaire{
+#populaire {
     order:1;
     width: 100%;
     margin-top: 10px;
@@ -935,14 +935,14 @@ footer p {
     margin: 0 0 10px 0;
 }
 
-#footer_propos{
+#footer_propos {
     width: 100%;
 }
 
-#footer_hébergements{
+#footer_hébergements {
     width: 100%;
 }
-#footer_assistance{
+#footer_assistance {
     width: 100%;
 }
 
