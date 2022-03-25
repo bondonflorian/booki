@@ -526,11 +526,11 @@ footer a {
     }
 
     #recherche> h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     #recherche> p {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     #barre_recherche {
@@ -747,7 +747,7 @@ footer a {
 
     nav li {
         width: 100%;
-        padding: 0 0 20px 0;
+        padding: 0 0 15px 0;
         text-align: center;
         border-bottom: 3px solid #F2F2F2;
     }
@@ -778,7 +778,7 @@ footer a {
 
     #recherche> p {
         margin: 0 0 30px 20px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #barre_recherche_localisation {
@@ -860,7 +860,6 @@ footer a {
         background: none;
         order: 2;
         width: 100%;
-        margin-top: 20px;
     }
 
     #hebergement_marseille> h2 {
@@ -884,7 +883,7 @@ footer a {
     }
 
     #hebergement_marseille> p {
-        margin-top: 30px;
+    margin: 30px 0 20px 20px;
     }
 
     /* La partie les plus populaires version mobile */
@@ -918,7 +917,7 @@ footer a {
     }
 
     .star_populaire {
-        padding: 35px 0 0 0;
+        padding: 30px 0 0 0;
     }
 
     /* La section activité version mobile */
