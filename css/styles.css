@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none !important;
-    color: black !important;
+    color: black;
 }
 
 /*On met en place dans les balises body la police importé Raleway*/
@@ -30,7 +30,7 @@ header {
 
 /*Définition de la taille du logo pour l'adapter à la page*/
 #logo {
-    width: 80px;
+    width: 5%;
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -205,7 +205,8 @@ button .loupe {
 
 #hebergement_marseille> p {
     font-size: 14px;
-    margin: 3% 0 4% 5%;
+    margin: 30px 0 25px 45px;
+    font-weight: bold;
 }
 
 #hebergement_marseille_block {
@@ -421,7 +422,7 @@ button .loupe {
     transition: all .4s ease-out;
 }
 
-#activites_petit_block1:hover {
+#activites_petit_block1:hover, #activites_petit_block2:hover, #activites_petit_block3:hover, #activites_petit_block4:hover {
     transform: scale(1.08);
 }
 
@@ -440,10 +441,6 @@ button .loupe {
     transition: all .4s ease-out;
 }
 
-#activites_petit_block2:hover {
-    transform: scale(1.08);
-}
-
 #activites_petit_block2 img {
     height: 100px;
     width: 100%;
@@ -459,10 +456,6 @@ button .loupe {
     transition: all .4s ease-out;
 }
 
-#activites_petit_block3:hover {
-    transform: scale(1.08);
-}
-
 #activites_petit_block3 img {
     height: 125px;
     width: 100%;
@@ -476,10 +469,6 @@ button .loupe {
     border-radius: 20px;
     box-shadow:0px 3px 15px rgba(0, 0, 0, 0.1);
     transition: all .4s ease-out;
-}
-
-#activites_petit_block4:hover {
-    transform: scale(1.08);
 }
 
 #activites_petit_block4 img {
@@ -508,13 +497,27 @@ footer a {
     color: black;
 }
 
-footer a:hover {
-    font-weight: bold;
-}
-
 /* La version tablette du site */
 
 @media all and (min-width: 768px) and (max-width: 992px) {
+    /* La taille du logo version tablette */
+
+    #logo {
+        width: 10%;
+    }
+
+    /* La navigation pour la tablette */
+
+    nav a {
+        padding: 28px 10px 0 10px;
+    }
+
+    nav a:active {
+        color: #0065FC;
+        border-top: 2px solid #0065FC;
+    }
+
+    /* La section recherche de la version tablette */
 
     #recherche {
         display: flex;
@@ -564,6 +567,11 @@ footer a:hover {
         margin: 0 10px 10px 0;
         height: 45px;
     }
+
+    .recherche_filtres_filtre:active {
+        background-color: #deebff;
+    }
+
     .recherche_filtres_filtre i {
         padding: 14px;
     }
@@ -598,8 +606,8 @@ footer a:hover {
     .hebergement_marseille_petit_block {
         width: 45%;
     }
-    .hebergement_marseille_petit_block:hover {
-        width: 48%;
+    .hebergement_marseille_petit_block:active {
+        transform: scale(1.08);
     }
 
     .hebergement_marseille_text {
@@ -608,7 +616,7 @@ footer a:hover {
     }
 
     .star {
-        font-size: 15px;
+        font-size: 10px;
     }
 
     /* La partie les plus populaires version tablette */
@@ -618,7 +626,7 @@ footer a:hover {
         margin-top: 10px;
         margin-bottom: 20px;
         background-color: #FFFFFF;
-        align-items: flex-start;
+        align-items: center;
     }
 
     #populaire_titre {
@@ -627,19 +635,30 @@ footer a:hover {
     }
 
     #populaire_titre> i {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .populaire_petit_block {
         width: 100%;
     }
 
+    .populaire_petit_block:active {
+        transform: scale(1.08);
+    }
+
     .populaire_text_block {
         font-size: 18px;
         padding-left: 25px;
     }
+
+    .populaire_text_block> h3 {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
     .star_populaire {
-        font-size: 16px;
+        font-size: 10px;
+        padding: 55px 0 0 0;
     }
 
 
@@ -658,6 +677,11 @@ footer a:hover {
     .activites_grand_block img {
         height: 420px;
     }
+
+    .activites_grand_block:active {
+        transform: scale(1.08);
+    }
+
     .activites_grand_block h3 {
         padding: 5px 0 0 20px;
         font-size: 20px;
@@ -671,6 +695,10 @@ footer a:hover {
     #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 {
         height: 217px;
         width: 100%;
+    }
+
+    #activites_petit_block1:active , #activites_petit_block2:active , #activites_petit_block3:active , #activites_petit_block4:active {
+        transform: scale(1.08);
     }
 
     #activites_petit_block1 img, #activites_petit_block2 img, #activites_petit_block3 img, #activites_petit_block4 img {
@@ -691,259 +719,278 @@ footer a:hover {
 
 /*Affichage pour mobile*/
 @media only screen and (max-width: 768px) {
-/* Configuration de la page et du logo */
-#body_page {
-    margin: 0;
-    max-width: 100%;
-}
+    /* Configuration de la page et du logo */
+    #body_page {
+        margin: 0;
+        max-width: 100%;
+    }
 
-#body_page h3 {
-    font-size: 17px;
-}
+    #body_page h3 {
+        font-size: 17px;
+    }
 
-/* La navigation mobile */
+    /* La navigation mobile */
 
-#logo {
-    margin: 30px 0 30px 0;
-    width: 150px;
-}
+    #logo {
+        margin: 20px 0 20px 0;
+        width: 120px;
+    }
 
-nav {
-    flex-direction: column;
-}
+    nav {
+        flex-direction: column;
+    }
 
-nav ul {
-    width: 100%;
-    padding: 0 0 0 0;
-}
+    nav ul {
+        width: 100%;
+        padding: 0 0 0 0;
+    }
 
-nav li {
-    width: 100%;
-    padding: 0 0 20px 0;
-    text-align: center;
-    border-bottom: 3px solid #F2F2F2;
-}
- nav li:hover {
-     border-bottom: 3px solid #0065FC;
- }
+    nav li {
+        width: 100%;
+        padding: 0 0 20px 0;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    nav li:active {
+        border-bottom: 3px solid #0065FC;
+    }
 
- nav a {
-     font-size: 18px;
-     text-align: center;
- }
+    nav a:active {
+        color: #0065FC !important;
+    }
 
- nav a:hover {
-     border-top: none;
- }
+    nav a {
+        font-size: 18px;
+        text-align: center;
+    }
 
-/*  La partie recherche mobile du site */
+    nav a:hover {
+        border-top: none;
+        color: black;
+    }
 
-#recherche> h1 {
-    margin: 20px;
-    font-size: 22px;
-}
+    /*  La partie recherche mobile du site */
 
-#recherche> p {
-    margin: 0 0 30px 20px;
-    font-size: 18px;
-}
+    #recherche> h1 {
+        margin: 20px;
+        font-size: 22px;
+    }
 
-#barre_recherche_localisation {
-    padding: 25px 15px 25px 15px;
-    font-size: 20px;
-}
+    #recherche> p {
+        margin: 0 0 30px 20px;
+        font-size: 18px;
+    }
 
-#barre_recherche {
-    justify-content: center;
-}
+    #barre_recherche_localisation {
+        padding: 25px 20px 25px 20px;
+        font-size: 20px;
+    }
 
-#barre_recherche form {
-    width: 240px;
-}
+    #barre_recherche {
+        justify-content: center;
+        align-items: center;
+    }
 
-#barre_recherche input {
-    width: 265px;
-    height: 50px;
-    border-right: none;
-    font-size: 18px;
-    padding-left: 15px;
-}
+    #barre_recherche form {
+        width: 240px;
+    }
 
-#barre_recherche button {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    font-size: 18px;
-}
+    #barre_recherche input {
+        width: 265px;
+        height: 48px;
+        border-right: none;
+        font-size: 18px;
+        padding-left: 15px;
+    }
 
-button .loupe {
-    display: block;
-}
+    #barre_recherche button {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 18px;
+    }
 
-button .rechercher {
-    display: none;
-}
+    button .loupe {
+        display: block;
+    }
 
-/* Les différents filtres version mobile */
-#recherche_filtres {
-    justify-content: space-between;
-}
+    button .rechercher {
+        display: none;
+    }
 
-#recherche_filtres> p {
-    display: initial;
-    width: 100%;
-    padding-left: 20px;
-}
+    /* Les différents filtres version mobile */
+    #recherche_filtres {
+        justify-content: space-between;
+        margin: 10px 20px 0 20px;
+    }
 
-#recherche_infos {
-    margin: 10px 0 20px 20px;
-    font-size: 16px;
-}
+    #recherche_filtres> p {
+        display: initial;
+        width: 100%;
+        padding-left: 5px;
+    }
+    
+    .recherche_filtres_filtre {
+        margin-bottom: 10px;
+        border: 2px solid #F2F2F2;
+        border-left: none;
+    }
 
-#recherche_filtres a {
-    margin-left: 15px;
-    margin-right: 15px;
-}
+    .recherche_filtres_filtre:active {
+        background-color: #deebff;
+    }
+    
 
-#recherche_infos_i {
-    margin-bottom: 20px;
-}
+    #recherche_infos {
+        margin: 10px 0 20px 20px;
+        font-size: 16px;
+    }
 
-.recherche_filtres_filtre {
-    margin-bottom: 10px;
-    border: 2px solid #F2F2F2;
-    border-left: none;
-}
+    #recherche_infos_i {
+        margin-bottom: 20px;
+    }
 
-/* La partie hébergement du site version mobile */
-#hebergement {
-    display: flex;
-    flex-direction: column;
-}
+    /* La partie hébergement du site version mobile */
+    #hebergement {
+        display: flex;
+        flex-direction: column;
+    }
 
-#hebergement_marseille {
-    background: none;
-    order: 2;
-    width: 100%;
-    margin-top: 20px;
-}
+    #hebergement_marseille {
+        background: none;
+        order: 2;
+        width: 100%;
+        margin-top: 20px;
+    }
 
-#hebergement_marseille> h2 {
-    margin-bottom: 1%;
-}
+    #hebergement_marseille> h2 {
+        margin: 0 0 10px 30px;
+    }
 
-.hebergement_marseille_petit_block {
-    width: 90%;
-}
+    .hebergement_marseille_petit_block {
+        width: 90%;
+    }
 
-.hebergement_marseille_petit_block:hover {
-    width: 90%;
-}
+    .hebergement_marseille_petit_block:active {
+        transform: scale(1.08);
+    }
 
-.hebergement_marseille_text {
-    font-size: 15px;
-}
+    .hebergement_marseille_text {
+        font-size: 15px;
+    }
 
-.hebergement_marseille_text .star {
-    font-size: 10px;
-}
+    .hebergement_marseille_text .star {
+        font-size: 10px;
+    }
 
-#hebergement_marseille> p {
-    margin-top: 30px;
-}
+    #hebergement_marseille> p {
+        margin-top: 30px;
+    }
 
-/* La partie les plus populaires version mobile */
-#populaire {
-    order:1;
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 0px;
-    padding-bottom: 40px;
-}
+    /* La partie les plus populaires version mobile */
+    #populaire {
+        order:1;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 0px;
+        padding-bottom: 40px;
+    }
 
-/* Correction d'un bug de mise en page ou l'image était rogné par la gauche du texte sur le bloc du milieu */
-.populaire_text_block> h3 {
-    font-size: 17px;
-    padding-right: 15px;
-    flex-wrap: wrap;
-    width: 200px;
-}
+    /* Correction d'un bug de mise en page ou l'image était rogné par la gauche du texte sur le bloc du milieu */
+    .populaire_text_block> h3 {
+        font-size: 17px;
+        padding-right: 15px;
+        flex-wrap: wrap;
+        width: 200px;
+    }
 
-.populaire_petit_block {
-    width: 100%;
-    margin: 10px 0 0 0;
-}
+    .populaire_petit_block {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
 
-#populaire_titre {
-    width: 90%;
-}
+    .populaire_petit_block:active {
+        transform: scale(1.08);
+    }
 
-.star_populaire {
-    padding: 35px 0 0 0;
-}
+    #populaire_titre {
+        width: 90%;
+    }
 
-/* La section activité version mobile */
-#activites h2 {
-    margin: 10px 0 20px 20px;
-}
+    .star_populaire {
+        padding: 35px 0 0 0;
+    }
 
-#activites_marseille_block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    /* La section activité version mobile */
+    #activites h2 {
+        margin: 10px 0 20px 20px;
+    }
 
-#activites_marseille_block img {
-    height: 150px;
-    width: 100%;
-}
+    #activites_marseille_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-#activites_marseille_block h3 {
-    font-size: 15px;
-}
+    #activites_marseille_block img {
+        height: 150px;
+        width: 100%;
+    }
 
-.activites_grand_block {
-    width: 90%;
-    margin: 0 0 25px 0;
-    height: 200px;
-}
+    #activites_marseille_block h3 {
+        font-size: 15px;
+    }
 
-.activites_petit_block {
-    width: 100%;
-    margin: 0;
-    align-items: center;
-}
+    .activites_grand_block {
+        width: 90%;
+        margin: 0 0 25px 0;
+        height: 200px;
+    }
 
-#activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 {
-    height: 200px;
-    width: 90%;
-    margin-bottom: 25px ;
-}
+    .activites_grand_block:active {
+        transform: scale(1.08);
+    }
 
-#activites_petit_block1 img, #activites_petit_block2 img, #activites_petit_block3 img, #activites_petit_block4 img {
-    height: 150px;
-}
+    .activites_petit_block {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
 
-/* Le bas de page version mobile */
-footer {
-    flex-direction: column;
-    padding: 30px 0 20px 30px;
-    height: 100%;
-}
+    #activites_petit_block1, #activites_petit_block2, #activites_petit_block3, #activites_petit_block4 {
+        height: 200px;
+        width: 90%;
+        margin-bottom: 25px ;
+    }
 
-footer p {
-    margin: 0 0 10px 0;
-}
+    #activites_petit_block1 img, #activites_petit_block2 img, #activites_petit_block3 img, #activites_petit_block4 img {
+        height: 150px;
+    }
 
-#footer_propos {
-    width: 100%;
-}
+    #activites_petit_block1:active, #activites_petit_block2:active, #activites_petit_block3:active, #activites_petit_block4:active {
+        transform: scale(1.08);
+    }
 
-#footer_hébergements {
-    width: 100%;
-}
-#footer_assistance {
-    width: 100%;
-}
+    /* Le bas de page version mobile */
+    footer {
+        flex-direction: column;
+        padding: 30px 0 20px 30px;
+        height: 100%;
+    }
+
+    footer p {
+        margin: 0 0 10px 0;
+    }
+
+    #footer_propos {
+        width: 100%;
+    }
+
+    #footer_hébergements {
+        width: 100%;
+    }
+    #footer_assistance {
+        width: 100%;
+    }
 
 }
