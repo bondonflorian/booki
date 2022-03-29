@@ -179,7 +179,6 @@ button .loupe {
 /*La partie hebergement à Marseille*/
 #hebergement {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 10px;
@@ -188,9 +187,10 @@ button .loupe {
 #hebergement_marseille {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 68%;
+    width: 70%;
     margin-right: 35px;
     padding: 40px 0 0 0;
+    margin-bottom: 10px;
 }
 
 #hebergement_marseille> h2 {
@@ -269,6 +269,7 @@ button .loupe {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 40px 0 0 0;
+    margin-bottom: 10px;
 }
 
 #populaire_block {
@@ -352,8 +353,6 @@ button .loupe {
 
 /*Section activités de la page*/
 #activites {
-    display: flex;
-    flex-direction: row;
     width: 100%;
     margin-top: 10px;
 }
@@ -829,8 +828,7 @@ footer a {
 
     /* Les différents filtres version mobile */
     #recherche_filtres {
-        justify-content: space-between;
-        margin: 10px 20px 0 20px;
+        margin-left: 20px;
     }
 
     #recherche_filtres> p {
@@ -851,7 +849,7 @@ footer a {
     
 
     #recherche_infos {
-        margin: 10px 0 20px 20px;
+        margin: 10px 0 10px 20px;
         font-size: 16px;
     }
 
@@ -900,7 +898,7 @@ footer a {
     #populaire {
         order:1;
         width: 100%;
-        margin-top: 10px;
+        margin: 10px 0 0 0;
         border-radius: 0px;
         padding-bottom: 40px;
     }
@@ -986,6 +984,7 @@ footer a {
         flex-direction: column;
         padding: 30px 0 20px 30px;
         height: 100%;
+        margin: 20px 0 0 0;
     }
 
     footer p {
