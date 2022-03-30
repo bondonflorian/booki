@@ -179,7 +179,6 @@ button .loupe {
 /*La partie hebergement à Marseille*/
 #hebergement {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     margin-top: 10px;
 }
@@ -218,19 +217,19 @@ button .loupe {
     background-color: white;
     width: 28%;
     margin: 0 0 35px 0;
-    padding: 5px 5px;
+    padding: 5px 5px 0 5px;
     border-radius: 20px ;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     transition: all .4s ease-out;
 }
 
 .hebergement_marseille_petit_block p {
-    margin: 5px;
+    margin: 5px 0 8px 5px;
     font-size: 12px;
 }
 
 .hebergement_marseille_petit_block h3 {
-    margin: 5px;
+    margin: 5px 0 8px 5px;
     font-size: 14px;
 }
 
@@ -246,7 +245,9 @@ button .loupe {
 }
 
 .hebergement_marseille_text {
-    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 10px;
 }
 
@@ -254,7 +255,8 @@ button .loupe {
     display: flex;
     color: #0065FC;
     font-size: 10px;
-    margin: 0 0 2px 5px;
+    margin: 0 0 0 5px;
+    padding-bottom: 10px;
 }
 
 .grey {
@@ -331,16 +333,19 @@ button .loupe {
 }
 
 .populaire_text_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 20px;
 }
 
-.populaire_text_block> h3 {
+.populaire_text> h3 {
     width: 80%;
     font-size: 14px;
     margin: 8px 0 10px 0;
 }
 
-.populaire_text_block> p {
+.populaire_text> p {
     font-size: 12px;
 }
 
@@ -348,7 +353,7 @@ button .loupe {
     display: flex;
     color: #0065FC;
     font-size: 10px;
-    padding: 40px 0 0 0;
+    padding-bottom: 10px;
 }
 
 /*Section activités de la page*/
@@ -612,7 +617,6 @@ footer a {
     }
 
     .hebergement_marseille_text {
-        padding-left: 20px;
         font-size: 16px;
     }
 
@@ -659,7 +663,7 @@ footer a {
         padding-left: 25px;
     }
 
-    .populaire_text_block> h3 {
+    .populaire_text_block h3 {
         width: 100%;
         margin: 10px 0 0 0;
     }
@@ -878,6 +882,10 @@ footer a {
         margin-bottom: 10px;
     }
 
+    .hebergement_marseille_petit_block h3, .hebergement_marseille_petit_block p {
+        margin: 5px;
+    }
+
     .hebergement_marseille_petit_block:active {
         transform: scale(1.08);
     }
@@ -904,7 +912,7 @@ footer a {
     }
 
     /* Correction d'un bug de mise en page ou l'image était rogné par la gauche du texte sur le bloc du milieu */
-    .populaire_text_block> h3 {
+    .populaire_text_block h3 {
         font-size: 17px;
         padding-right: 15px;
         flex-wrap: wrap;
@@ -922,10 +930,6 @@ footer a {
 
     #populaire_titre {
         width: 90%;
-    }
-
-    .star_populaire {
-        padding: 30px 0 0 0;
     }
 
     /* La section activité version mobile */
