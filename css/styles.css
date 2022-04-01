@@ -30,7 +30,7 @@ header {
 
 /*Définition de la taille du logo pour l'adapter à la page*/
 #logo {
-    width: 5%;
+    width: 76px;
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -504,13 +504,13 @@ footer a {
     /* La taille du logo version tablette */
 
     #logo {
-        width: 10%;
+        width: 68px;
     }
 
     /* La navigation pour la tablette */
 
     nav a {
-        padding: 28px 10px 0 10px;
+        padding: 29px 10px 0 10px;
     }
 
     nav a:active {
